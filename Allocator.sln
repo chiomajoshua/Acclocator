@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allocator", "Allocator\Allocator.csproj", "{FC9401C7-8222-4262-B748-B64FBAC476CF}"
+EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "Allocator Installer", "Allocator Installer\Allocator Installer.aiproj", "{63F65883-9E62-45C4-AE38-538396ABCD77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC9401C7-8222-4262-B748-B64FBAC476CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9401C7-8222-4262-B748-B64FBAC476CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9401C7-8222-4262-B748-B64FBAC476CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9401C7-8222-4262-B748-B64FBAC476CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63F65883-9E62-45C4-AE38-538396ABCD77}.Debug|Any CPU.ActiveCfg = All
+		{63F65883-9E62-45C4-AE38-538396ABCD77}.Debug|Any CPU.Build.0 = All
+		{63F65883-9E62-45C4-AE38-538396ABCD77}.Release|Any CPU.ActiveCfg = All
+		{63F65883-9E62-45C4-AE38-538396ABCD77}.Release|Any CPU.Build.0 = All
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
