@@ -44,7 +44,7 @@ namespace Allocator
             comboBox1.Items.Clear();
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_block_details.php?hostelid=" + hostelid + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_block_details.php?hostelid=" + hostelid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -68,7 +68,7 @@ namespace Allocator
             try
             {
                 string blocknum = comboBox1.Text.Trim();
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_block_id.php?hostelid=" + hostelid + "&blocknum=" + blocknum + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_block_id.php?hostelid=" + hostelid + "&blocknum=" + blocknum + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -92,7 +92,7 @@ namespace Allocator
             try
             {
                 //string blocknum = comboBox1.Text.Trim();
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/count_habitable_rooms.php?hostelid=" + hostelid + "";
+                string url = "http://localhost/Allocator/cgi-bin/count_habitable_rooms.php?hostelid=" + hostelid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -116,7 +116,7 @@ namespace Allocator
             try
             {
                 //string blocknum = comboBox1.Text.Trim();
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/count_population_per_hostel.php?hostelid=" + hostelid + "";
+                string url = "http://localhost/Allocator/cgi-bin/count_population_per_hostel.php?hostelid=" + hostelid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -140,7 +140,7 @@ namespace Allocator
             try
             {
                 //string blocknum = comboBox1.Text.Trim();
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/count_occupied_rooms.php?hostelid=" + hostelid + "";
+                string url = "http://localhost/Allocator/cgi-bin/count_occupied_rooms.php?hostelid=" + hostelid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -163,7 +163,7 @@ namespace Allocator
             try
             {
                 //string blocknum = comboBox1.Text.Trim();
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/count_occupied_rooms.php?hostelid=" + hostelid + "";
+                string url = "http://localhost/Allocator/cgi-bin/count_occupied_rooms.php?hostelid=" + hostelid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
