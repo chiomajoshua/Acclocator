@@ -123,7 +123,7 @@ namespace Allocator
             {
                 string username = metroTextBox1.Text.Trim();
                 string password = metroTextBox2.Text;
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/porter_login.php?staffid=" + username + "&password=" + password + "";
+                string url = "http://localhost/Allocator/cgi-bin/porter_login.php?staffid=" + username + "&password=" + password + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
