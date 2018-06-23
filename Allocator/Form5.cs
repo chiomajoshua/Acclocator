@@ -39,7 +39,7 @@ namespace Allocator
             string porterid = Form1.Logininfo.userid;
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_supervisor_room_block.php?porterid="+ porterid +"";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_supervisor_room_block.php?porterid="+ porterid +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -108,7 +108,7 @@ namespace Allocator
             try
             {
                 string porterid = Form1.Logininfo.userid;
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_supervisor_Room_Clearance.php?porterid="+ porterid +"";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_supervisor_Room_Clearance.php?porterid="+ porterid +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -147,7 +147,7 @@ namespace Allocator
             try
             {
                 string porterid = Form1.Logininfo.userid;
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_supervisor_room_block.php?porterid=" + porterid + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_supervisor_room_block.php?porterid=" + porterid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse responses = requ.GetResponse();
@@ -178,7 +178,7 @@ namespace Allocator
             comboBox2.Items.Clear();
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_room_details.php?blockid=" + blockid + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_room_details.php?blockid=" + blockid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -230,7 +230,7 @@ namespace Allocator
             try
             {
                 string roomnum = comboBox2.Text.Trim();
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/update_room_habitable.php?blockid="+ blockid +"&roomnum="+ roomnum +"&habitable="+ habitable +"";
+                string url = "http://localhost/Allocator/cgi-bin/update_room_habitable.php?blockid="+ blockid +"&roomnum="+ roomnum +"&habitable="+ habitable +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
