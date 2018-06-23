@@ -23,7 +23,7 @@ namespace Allocator
 {
     public partial class Form6 : MaterialForm
     {
-        string folderPath = "http://reg.run.edu.ng/";
+        string folderPath = "http://localhost/";
         string level;
         public Form6()
         {
@@ -41,7 +41,7 @@ namespace Allocator
             {
                 string matric = textBox1.Text.Trim();
                 string hostelid = Form1.Logininfo.hostelid.Trim();
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/random_room_allocator.php?matric="+ matric +"&level="+ level +"&hostelid="+ hostelid +"";
+                string url = "http://localhost/Allocator/cgi-bin/random_room_allocator.php?matric="+ matric +"&level="+ level +"&hostelid="+ hostelid +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 30000;
                 WebResponse response = requ.GetResponse();
@@ -89,7 +89,7 @@ namespace Allocator
                 try
                 {
                     string matric = textBox1.Text.Trim();
-                    string url = "http://reg.run.edu.ng/get_stud_profile.php?mat=" + matric + "&pwd=" + matric + "";
+                    string url = "http://localhost/get_stud_profile.php?mat=" + matric + "&pwd=" + matric + "";
                     WebRequest requ = WebRequest.Create(url);
                     requ.Timeout = 30000;
                     WebResponse response = requ.GetResponse();
