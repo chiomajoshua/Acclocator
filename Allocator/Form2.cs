@@ -73,7 +73,7 @@ namespace Allocator
         {
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/get_session.php?";
+                string url = "http://localhost/Allocator/cgi-bin/get_session.php?";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 60000;
                 WebResponse response = requ.GetResponse();
@@ -94,7 +94,7 @@ namespace Allocator
         {
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/get_session_id.php?";
+                string url = "http://localhost/Allocator/cgi-bin/get_session_id.php?";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 60000;
                 WebResponse response = requ.GetResponse();
