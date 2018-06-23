@@ -42,7 +42,7 @@ namespace Allocator
         {
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/get_session_id.php?";
+                string url = "http://localhost/Allocator/cgi-bin/get_session_id.php?";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -434,7 +434,7 @@ namespace Allocator
         private void fetchstudentrecord()
         {
             string matric = textBox1.Text.Trim();
-            string urld = "http://reg.run.edu.ng/get_stud_profile.php?mat=" + matric + "&pwd=" + matric + "";
+            string urld = "http://localhost/get_stud_profile.php?mat=" + matric + "&pwd=" + matric + "";
             WebRequest request = WebRequest.Create(urld);
             request.Timeout = 40000;
             WebResponse responses = request.GetResponse();
@@ -483,7 +483,7 @@ namespace Allocator
             try
             {
                 string matricnumber = textBox1.Text.Trim();
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_student_id.php?matric="+ matricnumber +"";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_student_id.php?matric="+ matricnumber +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -523,7 +523,7 @@ namespace Allocator
                 string phone = FatherPhone.Text;
                 string email = FatherEmail.Text;
                 string occupation = FatherOccupation.Text;
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/insert_kin_info.php?occupantid="+ studentid+"&kintype="+ fatherid +"&firstname="+ othernames +"&lastname="+ surname +"&address="+ address +"&phone="+ phone +"&email="+ email +"&occupation="+ occupation+ "&sessionid="+ sessionid +"";
+                string url = "http://localhost/Allocator/cgi-bin/insert_kin_info.php?occupantid="+ studentid+"&kintype="+ fatherid +"&firstname="+ othernames +"&lastname="+ surname +"&address="+ address +"&phone="+ phone +"&email="+ email +"&occupation="+ occupation+ "&sessionid="+ sessionid +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -554,7 +554,7 @@ namespace Allocator
                     string phone = MotherPhone.Text;
                     string email = MotherEmail.Text;
                     string occupation = MotherOccupation.Text;
-                    string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/insert_kin_info.php?occupantid=" + studentid + "&kintype=" + motherid + "&firstname=" + othernames + "&lastname=" + surname + "&address=" + address + "&phone=" + phone + "&email=" + email + "&occupation=" + occupation + "&sessionid=" + sessionid + "";
+                    string url = "http://localhost/Allocator/cgi-bin/insert_kin_info.php?occupantid=" + studentid + "&kintype=" + motherid + "&firstname=" + othernames + "&lastname=" + surname + "&address=" + address + "&phone=" + phone + "&email=" + email + "&occupation=" + occupation + "&sessionid=" + sessionid + "";
                     WebRequest requ = WebRequest.Create(url);
                     requ.Timeout = 40000;
                     WebResponse response = requ.GetResponse();
@@ -586,7 +586,7 @@ namespace Allocator
                 string phone = SponsorPhone.Text;
                 string email = SponsorEmail.Text;
                 string occupation = SponsorOccupation.Text;
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/insert_kin_info.php?occupantid=" + studentid + "&kintype=" + sponsorid + "&firstname=" + othernames + "&lastname=" + surname + "&address=" + address + "&phone=" + phone + "&email=" + email + "&occupation=" + occupation + "&sessionid=" + sessionid + "";
+                string url = "http://localhost/Allocator/cgi-bin/insert_kin_info.php?occupantid=" + studentid + "&kintype=" + sponsorid + "&firstname=" + othernames + "&lastname=" + surname + "&address=" + address + "&phone=" + phone + "&email=" + email + "&occupation=" + occupation + "&sessionid=" + sessionid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -613,7 +613,7 @@ namespace Allocator
             try
             {
                 string description = txtpersonaleffect.Text;
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/insert_personal_effects.php?occupantid="+ studentid +"&description="+ description +"&sessionid="+ sessionid +"";
+                string url = "http://localhost/Allocator/cgi-bin/insert_personal_effects.php?occupantid="+ studentid +"&description="+ description +"&sessionid="+ sessionid +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -659,7 +659,7 @@ namespace Allocator
         {
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_father_info.php?occupantid="+ studentid +"&kintype="+ fatherid +"&sessionid="+ sessionid +"";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_father_info.php?occupantid="+ studentid +"&kintype="+ fatherid +"&sessionid="+ sessionid +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -692,7 +692,7 @@ namespace Allocator
         {
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_father_info.php?occupantid=" + studentid + "&kintype=" + motherid + "&sessionid=" + sessionid + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_father_info.php?occupantid=" + studentid + "&kintype=" + motherid + "&sessionid=" + sessionid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -725,7 +725,7 @@ namespace Allocator
         {
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_father_info.php?occupantid=" + studentid + "&kintype=" + sponsorid + "&sessionid=" + sessionid + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_father_info.php?occupantid=" + studentid + "&kintype=" + sponsorid + "&sessionid=" + sessionid + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -758,7 +758,7 @@ namespace Allocator
         {
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_personal_effects.php?occupantid="+ studentid +"&sessionid="+ sessionid+"";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_personal_effects.php?occupantid="+ studentid +"&sessionid="+ sessionid+"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -789,7 +789,7 @@ namespace Allocator
                 string matric = textBox1.Text.Trim();
                 string amount = "3000";
                 string officialid = "1";
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/pay_runsa_fee.php?matric=" + matric + "&sessionid=" + sessionid + "&amount= " + amount + "&officialid=" + officialid + "&level=" + studentlevel + "";
+                string url = "http://localhost/Allocator/cgi-bin/pay_runsa_fee.php?matric=" + matric + "&sessionid=" + sessionid + "&amount= " + amount + "&officialid=" + officialid + "&level=" + studentlevel + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
