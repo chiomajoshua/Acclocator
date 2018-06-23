@@ -12,7 +12,7 @@ namespace Allocator
     public partial class Form10 : MaterialForm
     {
         string occupant, gender, block_id, room_id;
-        string folderPath = "http://reg.run.edu.ng/";
+        string folderPath = "http://localhost/";
         public Form10()
         {
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace Allocator
             try
             {
                 string matric = textBox1.Text.Trim();
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_accurate_accommodation_details.php?matric=" + matric + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_accurate_accommodation_details.php?matric=" + matric + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 90000;
                 WebResponse response = requ.GetResponse();
@@ -68,7 +68,7 @@ namespace Allocator
         {
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/update_room_information.php?roomid=" + room_id + "&occupant=" + occupant +"";
+                string url = "http://localhost/Allocator/cgi-bin/update_room_information.php?roomid=" + room_id + "&occupant=" + occupant +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 40000;
                 WebResponse response = requ.GetResponse();
@@ -107,7 +107,7 @@ namespace Allocator
                 try
                 {
                     string matric = textBox1.Text.Trim();
-                    string url = "http://reg.run.edu.ng/get_stud_profile.php?mat=" + matric + "&pwd=" + matric + "";
+                    string url = "http://localhost/get_stud_profile.php?mat=" + matric + "&pwd=" + matric + "";
                     WebRequest requ = WebRequest.Create(url);
                     requ.Timeout = 90000;
                     WebResponse response = requ.GetResponse();
@@ -175,7 +175,7 @@ namespace Allocator
             try
             {
                 string actname = comboBox1.Text;
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_block_with_condition.php?gender=" + gender + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_block_with_condition.php?gender=" + gender + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 90000;
                 WebResponse responses = requ.GetResponse();
@@ -207,7 +207,7 @@ namespace Allocator
             try
             {
                 string actname = comboBox1.Text;
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_room_with_condition.php?blockid=" + block_id + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_room_with_condition.php?blockid=" + block_id + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 90000;
                 WebResponse responses = requ.GetResponse();
@@ -238,7 +238,7 @@ namespace Allocator
             comboBox1.Items.Clear();
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_block_with_condition.php?gender="+ gender +"";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_block_with_condition.php?gender="+ gender +"";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 90000;
                 WebResponse response = requ.GetResponse();
@@ -265,7 +265,7 @@ namespace Allocator
             comboBox2.Items.Clear();
             try
             {
-                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/fetch_room_with_condition.php?blockid=" + block_id + "";
+                string url = "http://localhost/Allocator/cgi-bin/fetch_room_with_condition.php?blockid=" + block_id + "";
                 WebRequest requ = WebRequest.Create(url);
                 requ.Timeout = 90000;
                 WebResponse response = requ.GetResponse();
