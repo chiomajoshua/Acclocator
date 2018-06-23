@@ -65,7 +65,7 @@ namespace Allocator
                                 string staffid = Form1.Logininfo.userid;
                                 string oldpassword = currentpassword.Text;
                                 string newpass = newpassword.Text;
-                                string url = "http://dssd.run.edu.ng/Allocator/cgi-bin/update_porter_password.php?staffid=" + staffid + "&oldpassword=" + oldpassword + "&newpassword=" + newpass + "";
+                                string url = "http://localhost/Allocator/cgi-bin/update_porter_password.php?staffid=" + staffid + "&oldpassword=" + oldpassword + "&newpassword=" + newpass + "";
                                 WebRequest requ = WebRequest.Create(url);
                                 requ.Timeout = 40000;
                                 WebResponse response = requ.GetResponse();
